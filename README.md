@@ -16,38 +16,32 @@ Set default applications for common tasks (web browser, email client, media play
 
 ### Prerequisites
 
-#### Install Rust
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-#### Install GTK 4 development libraries
-
 **Arch Linux:**
 ```bash
-sudo pacman -S gtk4 base-devel
+sudo pacman -S rust gtk4 base-devel
 ```
 
 **Debian / Ubuntu:**
 ```bash
-sudo apt install libgtk-4-dev build-essential
+sudo apt install rustc cargo libgtk-4-dev build-essential
 ```
 
 **Fedora:**
 ```bash
-sudo dnf install gtk4-devel gcc
+sudo dnf install rust cargo gtk4-devel gcc
 ```
 
 **openSUSE:**
 ```bash
-sudo zypper install gtk4-devel gcc
+sudo zypper install rust cargo gtk4-devel gcc
 ```
 
 **Gentoo:**
 ```bash
-sudo emerge gui-libs/gtk
+sudo emerge dev-lang/rust gui-libs/gtk
 ```
+
+Alternatively, install Rust via [rustup](https://rustup.rs/).
 
 ### Build and Install
 
