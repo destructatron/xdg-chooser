@@ -1,0 +1,41 @@
+[package]
+name = "xdg-chooser"
+version = "0.1.0"
+edition = "2021"
+authors = ["Harley"]
+description = "Desktop-agnostic default application chooser for Linux"
+license = "MIT"
+repository = "https://github.com/destructatron/xdg-chooser"
+keywords = ["gtk4", "linux", "xdg", "mime", "desktop"]
+categories = ["gui", "config"]
+
+[dependencies]
+# GTK 4 bindings
+gtk = { version = "0.9", package = "gtk4" }
+glib = "0.20"
+gio = "0.20"
+
+# XDG base directories
+xdg = "2.5"
+
+# Icon loading fallback
+freedesktop-icons = "0.2"
+
+# Error handling
+thiserror = "2.0"
+anyhow = "1.0"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Unix process handling
+libc = "0.2"
+
+# Shell command parsing
+shell-words = "1.1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
