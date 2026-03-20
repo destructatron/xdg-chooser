@@ -1,6 +1,6 @@
 [package]
 name = "xdg-chooser"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Harley"]
 description = "Desktop-agnostic default application chooser for Linux"
@@ -11,9 +11,9 @@ categories = ["gui", "config"]
 
 [dependencies]
 # GTK 4 bindings
-gtk = { version = "0.9", package = "gtk4" }
-glib = "0.20"
-gio = "0.20"
+gtk = { version = "0.10", package = "gtk4" }
+glib = "0.21"
+gio = "0.21"
 
 # XDG base directories
 xdg = "2.5"
