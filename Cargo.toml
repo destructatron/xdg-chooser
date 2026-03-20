@@ -1,6 +1,6 @@
 [package]
 name = "xdg-chooser"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Harley"]
 description = "Desktop-agnostic default application chooser for Linux"
